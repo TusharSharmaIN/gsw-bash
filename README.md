@@ -199,7 +199,7 @@ Searches a file for a particular pattern of characters, and displays all lines t
     $ chown --reference=lines.txt new_file.txt
     ```
 
-5.  chown for multiple files
+5.  chown for multiple files  
     It copies ownership of one file to another.
     ```
     $ chown runner new_file.txt my_new_file.txt
