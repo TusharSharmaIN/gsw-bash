@@ -4,6 +4,11 @@
 -   [ls](#ls)
 -   [cat](#cat)
 -   [grep](#grep)
+-   [chmod](!#chmod)
+-   [chown](!#chown)
+-   [tcpdump](!#tcpdump)
+-   [pwd](!#pwd)
+-   [cut](!#cut)
 
 ### ls
 File and directory listing command
@@ -33,7 +38,7 @@ File and directory listing command
     ```
 
 5.  ls with -1 option.
-    It displayes one file per line.
+    Display one file per line using ls -1
     ```
     $ ls -1
     ```
@@ -84,7 +89,7 @@ It reads data from the file and gives their content as output.
     ```        
 
 6.  cat with -s option
-    It supress the empty lines in a file.
+    It supress the empty lines in a file
     ```
     $ cat -s new_file.txt
     ```
@@ -129,7 +134,7 @@ Searches a file for a particular pattern of characters, and displays all lines t
     ````
 
 4.  grep with -v option  
-    It displayes the negation of the result.
+    It displayes the negation of the result
     ```
     $ grep -v "bash" new_file.txt
     ````
@@ -145,3 +150,64 @@ Searches a file for a particular pattern of characters, and displays all lines t
     ```
     $ grep "bash$" new_file.txt
     ```
+
+### chmod
+Used to change the access mode of a file.
+
+1.  chmod with u=r option  
+    It sets owner permession to read only.
+    ```
+    $ chmod u=r HW.c
+    ```
+
+2.  chmod with u=rw option  
+    It sets owner permession not to execute the file nor to change the directory.
+    ```
+    $ chmod u=rw HW.c
+    ```
+
+3.  chmod with u=x option  
+    It sets owner permession to execute the file or to change the directory.
+    ```
+    $ chmod u=x HW.c
+    ```
+
+### chown
+Searches a file for a particular pattern of characters, and displays all lines that contain that pattern.
+
+1.  chown with no option  
+    It changes the ownership of file to the user
+    ```
+    $ chown runner lines.txt
+    ```
+
+2.  chown with -c option  
+    It reports when a file change is made.
+    ```
+    $ chown -c runner lines.txt
+    ```
+
+3.  chown with --from option  
+    It changes ownership from one to other for all.
+    ```
+    $ chown --from=runner root lines.txt
+    ```
+
+4.  chown with --reference option  
+    It copies ownership of one file to another.
+    ```
+    $ chown --reference=lines.txt new_file.txt
+    ```
+
+5.  chown for multiple files
+    It copies ownership of one file to another.
+    ```
+    $ chown runner new_file.txt my_new_file.txt
+    ```
+
+### tcpdump
+
+
+### pwd
+
+### cut
