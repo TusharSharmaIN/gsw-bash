@@ -52,14 +52,50 @@ File and directory listing command
 ### cat
 It reads data from the file and gives their content as output.
 
-1.  ls with one argument.
+1.  cat with one argument.
     It displays the contents of a single file. 
     ```
     $ cat HW.c
-    ```
+    ````
 
-2.  ls with multiple argument.
+2.  cat with multiple argument.
     It displays the contents of a all the files.
     ```
     $ cat HW.c Lines.txt
+    ````
+
+3. cat with -n option
+    It displays contents of a file preceding with line numbers.
+    ```
+    $   cat -n HW.c
+    ```
+        
+4.  cat with > option
+    It creates a new file with filename passed.
+    ```
+    $   cat >new_file.txt
+    ```
+        
+5.  cat with > option in between of two file names
+    It copies the contents of one file to another file.
+    ```
+    $   cat new_file.txt >my_new_file.txt
+    ```        
+
+6.  cat with -s option
+    It supress the empty lines in a file
+    ```
+    $   cat -s new_file.txt
+    ```
+
+7.  cat with >> option
+    It appends the content of one file to the end of another file.
+    ```
+    $   cat new_file.txt >> my_new_file.txt
+    ```
+        
+8.  tac command
+    It displays content of a file in reverse order.
+    ```
+    $   tac HW.c
     ```
