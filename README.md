@@ -4,11 +4,11 @@
 -   [ls](#ls)
 -   [cat](#cat)
 -   [grep](#grep)
--   [chmod](!#chmod)
--   [chown](!#chown)
--   [tcpdump](!#tcpdump)
--   [pwd](!#pwd)
--   [cut](!#cut)
+-   [chmod](#chmod)
+-   [chown](#chown)
+-   [tcpdump](#tcpdump)
+-   [pwd](#pwd)
+-   [cut](#cut)
 
 ### ls
 File and directory listing command
