@@ -1,4 +1,4 @@
-# Getting Started With Linux Commands
+# Getting Started With Bash Commands
 
 ## List of Commands
 -   [ls](#ls)
