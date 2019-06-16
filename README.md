@@ -1,14 +1,35 @@
 # Getting Started With Bash Commands
 
 ## List of Commands
+-   [pwd](#pwd)
 -   [ls](#ls)
 -   [cat](#cat)
 -   [grep](#grep)
 -   [chmod](#chmod)
 -   [chown](#chown)
 -   [tcpdump](#tcpdump)
--   [pwd](#pwd)
 -   [cut](#cut)
+
+### pwd
+Prints the working directory.
+
+1.  pwd with no option  
+    It prints the complete path.
+    ```
+    $ pwd
+    ````
+
+2.  pwd with -L option  
+    It prints the symbolic path.
+    ```
+    $ pwd -L
+    ````
+
+2.  pwd with -P option  
+    It prints the actual path.
+    ```
+    $ pwd -P
+    ````
 
 ### ls
 File and directory listing command
@@ -26,7 +47,7 @@ File and directory listing command
     ```
 
 3.  ls with -a option.
-    It shows all the files hidden with '.'.
+    It shows all the files hidden with `.`.
     ```
     $   ls -a
     ```
@@ -199,15 +220,80 @@ Searches a file for a particular pattern of characters, and displays all lines t
     $ chown --reference=lines.txt new_file.txt
     ```
 
-5.  chown for multiple files  
+5.  chown for multiple files
     It copies ownership of one file to another.
     ```
     $ chown runner new_file.txt my_new_file.txt
     ```
 
 ### tcpdump
+It is packets sniffing or package analyzing tool .
 
+1.  tcpdump with no options  
+    It will captures packets from all the interfaces.
+    ```
+    $ tcpdump
+    ```
 
-### pwd
+2.  tcpdump with -i option
+    It will captures packets from a specific interface.
+    ```
+    $ tcpdump -i eth0
+    ```
+
+3.  tcpdump with -c option  
+    It will captures only n number of packets.
+    ```
+    $ tcpdump -c 10 -i eth0
+    ```
+
+4.  tcpdump with -A option  
+    It will captures packets in ASCII form.
+    ```
+    $ tcpdump -A -i eth0
+    ```
+
+5.  tcpdump with -D option  
+    It displays available interfaces.
+    ```
+    $ tcpdump -D
+    ```
+
+6.  tcpdump with -w option  
+    It saves the packets into a `.pcap` file
+    ```
+    $ tcpdump -w pkt.pcap -i eth0
+    ```
+
+7.  tcpdump with -r option
+    It reads the pckets from a `.pacp` file
+    ```
+    $ tcpdump -r pkt.pcap
+    ```
 
 ### cut
+It is for cutting out the sections from each line of files and displaying the result to output.
+
+1.  cut with -b option  
+    It extracts specific bytes from a file in every line.
+    ```
+    $ cut -b 1-4 HW.c
+    ```
+
+2.  cut with -c option  
+    It extracts nth characters fom a file.
+    ```
+    $ cut -c 1,4,7 HW.c
+    ```
+
+3.  cut with -f option  
+    It extracts fields seperated by a delimiter passed with `-d` option.
+    ```
+    $ cut -d " " -f 1 HW.c
+    ```
+
+4.  cut with --complement option  
+    It compliments the output.
+    ```
+    $ cut --compliment -c 1,4,7 HW.c
+    ```
