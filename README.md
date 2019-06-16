@@ -59,7 +59,7 @@ File and directory listing command.
     ```
 
 5.  ls with -1 option  
-    Display one file per line using ls -1.
+    It displays one file per line using ls -1.
     ```
     $ ls -1
     ```
@@ -110,7 +110,7 @@ It reads data from the file and gives their content as output.
     ```        
 
 6.  cat with -s option  
-    It supress the empty lines in a file
+    It supress the empty lines in a file.
     ```
     $ cat -s new_file.txt
     ```
@@ -155,7 +155,7 @@ Searches a file for a particular pattern of characters, and displays all lines t
     ````
 
 4.  grep with -v option  
-    It displayes the negation of the result
+    It displayes the negation of the result.
     ```
     $ grep -v "bash" new_file.txt
     ````
@@ -197,7 +197,7 @@ Used to change the access mode of a file.
 Searches a file for a particular pattern of characters, and displays all lines that contain that pattern.
 
 1.  chown with no option  
-    It changes the ownership of file to the user
+    It changes the ownership of file to the user.
     ```
     $ chown runner lines.txt
     ```
@@ -260,13 +260,13 @@ It is packets sniffing or package analyzing tool.
     ```
 
 6.  tcpdump with -w option  
-    It saves the packets into a `.pcap` file
+    It saves the packets into a `.pcap` file.
     ```
     $ tcpdump -w pkt.pcap -i eth0
     ```
 
 7.  tcpdump with -r option  
-    It reads the pckets from a `.pacp` file
+    It reads the pckets from a `.pacp` file.
     ```
     $ tcpdump -r pkt.pcap
     ```
